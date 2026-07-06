@@ -1,61 +1,134 @@
-<link rel="stylesheet" href="./styles.css">
-<section>
-<h1>TechStore</h1>
-<h2>Productos más vendidos</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Invierno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<div class="productos">
+    <!-- 1. Header -->
+    <header>
+        <div class="logo">TechStore</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Beneficios</a></li>
+                <li><a href="#">Opiniones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="btn-login">Iniciar sesión</button>
+    </header>
 
-    <article class="card">
-        <img src="/img/mouse.jpg">
-        <h3>Mouse</h3>
-        <p>$15000</p>
-        <p>mouse para compu.</p>
-        <button>Ver producto</button>
-    </article>
+    <main>
+        <!-- 2. Banner principal -->
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Ofertas de Invierno</h1>
+                <p>Equipate con lo mejor en tecnología este invierno a precios increíbles.</p>
+                <button class="btn-main">Comprar ahora</button>
+            </div>
+            <div class="banner-img-container">
+                <span class="badge-promo">30% OFF</span>
+            </div>
+        </section>
 
-    <article class="card">
-        <img src="./img/teclado.jpg">
-        <h3>Teclado</h3>
-        <p>$30000</p>
-        <p>teclado multifuncionaol.</p>
-        <button>Ver producto</button>
-    </article>
-  <article class="card">
-        <img src="./img/notebuck.png">
-        <h3>notebukk</h3>
-        <p>$1423</p>
-        <p>notebuk par todos los bepis.</p>
-        <button>Ver producto</button>
-    </article>
+        <section class="productos-seccion">
+            <h2>Productos más vendidos</h2>
+            <div class="productos-flex">
+                
+                <article class="product-card">
+                    <img src="./img/notebuck.png" alt="Notebook">
+                    <h3>Notebook </h3>
+                    <p class="precio">$999</p>
+                    <p class="desc">Equipada con procesador para jugar fortnite.</p>
+                    <button class="btn-card">Ver producto</button>
+                </article>
 
+                <article class="product-card">
+                    <img src="./img/teclado.jpg" alt="Celular">
+                    <h3>Teclado</h3>
+                    <p class="precio">$699</p>
+                    <p class="desc">Super teclado mecanico</p>
+                    <button class="btn-card">Ver producto</button>
+                </article>
 
-</div>
+                <article class="product-card">
+                    <img src="./img/mose.jpg" alt="Auriculares">
+                    <h3>Mouse</h3>
+                    <p class="precio">$120</p>
+                    <p class="desc">Mouse con mas de un millon de clicks</p>
+                    <button class="btn-card">Ver producto</button>
+                </article>
 
-</section>
-<section>
+            </div>
+        </section>
 
-    <h2>opiniones</h2>
+    
+        <section class="beneficios-flex">
+            <div class="beneficio">
+                <h3>🚚 Envíos gratis</h3>
+                <p>A todo el país.</p>
+            </div>
+            <div class="beneficio">
+                <h3>🛡️ Garantía</h3>
+                <p>Oficial de 1 año.</p>
+            </div>
+            <div class="beneficio">
+                <h3>💳 Cuotas</h3>
+                <p>Sin interés.</p>
+            </div>
+            <div class="beneficio">
+                <h3>⚙️ Soporte</h3>
+                <p>Online 24/7.</p>
+            </div>
+        </section>
 
-    <div class="opiniones">
+        <!-- 5. Opiniones de clientes -->
+        <section class="opiniones-seccion">
+            <h2>Opiniones</h2>
+            <div class="opiniones-flex">
+                <article class="testimonio">
+                    <h4>Juan P.</h4>
+                    <p>★★★★★</p>
+                    <p>"Excelente atención y envío rápido."</p>
+                </article>
+                <article class="testimonio">
+                    <h4>María L.</h4>
+                    <p>★★★★★</p>
+                    <p>"El celular funciona de diez, muy conforme."</p>
+                </article>
+                <article class="testimonio">
+                    <h4>Pedro G.</h4>
+                    <p>★★★★★</p>
+                    <p>"Buenos precios y facilidad de pago."</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
-        <article class="reseña">
-            <h3>Juan</h3>
-            <p> anda re cheto</p>
-            <p>★★★★★</p>
-        </article>
+    <!-- 6. Footer -->
+    <footer>
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>info@techstore.com</p>
+        </div>
+        <div class="footer-col">
+            <h4>Dirección</h4>
+            <p>Av. Central 456</p>
+        </div>
+        <div class="footer-col">
+            <h4>Sucursales</h4>
+            <p>Sede Central</p>
+        </div>
+        <div class="footer-col">
+            <h4>Suscripción</h4>
+            <p>Cupón extra: WINTER10</p>
+        </div>
+    </footer>
 
-        <article class="reseña">
-            <h3>María</h3>
-            <p>envio rapido ideal para mis bendis</p>
-            <p>★★★★★</p>
-        </article>
-
-        <article class="reseña">
-            <h3>Lucas</h3>
-            <p>buen precio anda re zarpado</p>
-            <p>★★★★★</p>
-        </article>
-
-    </div>
-
-</section>
+</body>
+</html>
